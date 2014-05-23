@@ -1,0 +1,10 @@
+<div>
+  <h2>What do you have?</h2>
+  <div ng-repeat="ingredient in ingredients"><input type="checkbox" ng-model="ingredient.have">{{ingredient.name}}</div>
+
+  <hr>
+  <h2>{{makeTitle}}</h2>
+  <ul>
+    <li ng-repeat="drink in canMakeThese">{{drink.name}}</li>
+  </ul>
+</div>
